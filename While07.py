@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count_evenNumber = 0
+    idx = 0
+    while idx < len(s):
+        if s[idx].isdigit():
+            if int(s[idx]) % 2 == 0:
+                count_evenNumber += 1
+        idx += 1
+    return count_evenNumber

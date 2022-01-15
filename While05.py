@@ -6,4 +6,10 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx = 0
+    count_lower = 0
+    while idx < len(s):
+        if s[idx].islower():
+            count_lower += 1
+        idx += 1
+    return count_lower

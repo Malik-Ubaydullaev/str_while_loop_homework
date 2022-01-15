@@ -1,5 +1,5 @@
 def count_punctuation(ch):
-    if ch == ',' or ch == '.' or ch == ';' or ch == ':' or ch == '?' or ch == '!':
+    if not ch.isdigit() and not ch.isalpha():
         return 1
     else:
         return 0    
